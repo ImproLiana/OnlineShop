@@ -1,0 +1,144 @@
+/* .grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    /* grid-template-rows: repeat(1, 150px); */
+    /* gap: 20px;
+    justify-content: center; 
+} */
+
+
+/* .grid > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+} */
+
+
+body {
+    background-color: #dedede;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 360px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.item {
+    position: relative;  /* относительное позиционирование  */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.1);
+}
+
+.item p {
+    height: 10%;
+    padding: 0 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+/* .item img {  */
+    /* position: absolute;  абсолютное позиционирование */
+    /* bottom: 10px;  небольшой отступ снизу */
+    /* left: 50%;  отступа слева */
+    /* transform: translate(-50%);  учитываем размеры изображения */
+/* /} */
+
+
+/* p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  */
+
+
+.item img{
+    width:90px;
+    position: absolute;  /* абсолютное позиционирование */
+    bottom: 10px;  /* небольшой отступ снизу */
+    left: 50%;  /* отступа слева */
+    transform: translate(-50%);  /* учитываем размеры изображения */
+    /* padding-bottom: 30px; */
+} 
+
+button{
+    margin-left: 10px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 7%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(142, 140, 140);
+}
+
+.ch{
+    margin-left: 0px;
+    margin-right: 0px;
+    /* padding: 5px; */
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 7%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(142, 140, 140);
+}
+
+.hide{
+    display: none;     /* скрывает кнопку */
+
+}
+
+#shop_bag{
+    width:70px;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#check_button{
+    text-align: center;
+    margin-left: auto;
+    padding: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    background-color: #dedede;;
+}
+
+table{
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+    text-align: center;
+}
+
+
+th{
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* border-radius: 2%; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 20px;
+}
+
+td{
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* border-radius: 2%; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 20px;
+}   
+
+/* #total{
+    
+} */
