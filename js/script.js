@@ -1,3 +1,4 @@
+const tg = window.Telegram.WebApp;
 const items = [
     {
         name: 'Avgvst x Crosby Studios Cutlery тринкет',
@@ -164,8 +165,7 @@ function docheck() {
             check.push(`${item.name}/${item.price}/${item.count}/${item.price*item.count}`)
         }
     });
-    console.log(check);
-
+    
     let total = 0;
     items.forEach(item => {total += item.price*item.count});
 
@@ -174,4 +174,9 @@ function docheck() {
         <td id="total" colspan="3"><b>Total: ${total}</b></td>
     `;
     tbody.appendChild(tr);
+
+    check.push(total);
+    const newcheck = JSON.stringify(check);
+    tg.sendData(newcheck);
+    console.log(check);
 }
