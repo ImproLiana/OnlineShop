@@ -100,26 +100,29 @@ items.forEach(item => {
         button_plus.classList.remove('hide');
         button_minus.classList.remove('hide');
         text_bag.classList.remove('hide');
-        text_bag.textContent = +text_bag.textContent+1
-        item.count = item.count+1
+        text_bag.textContent = 1;
+        item.count = 1;
     });
 
     button_plus.addEventListener('click', () => {
-        text_bag.textContent = +text_bag.textContent+1;
+        text_bag.textContent = +text_bag.textContent + 1;
         item.count++;
     });
 
     button_minus.addEventListener('click', () => {
-    if (+text_bag.textContent > 1) {
-        text_bag.textContent = +text_bag.textContent-1;
-        item.count--;
-    } else {
-        button_change.classList.remove('hide');
-        button_plus.classList.add('hide');
-        button_minus.classList.add('hide');
-        text_bag.classList.add('hide');
-        item.count--;
-    }
+        if (+text_bag.textContent > 1) {
+            text_bag.textContent = +text_bag.textContent - 1;
+            item.count--;
+        } else {
+            button_change.classList.remove('hide');
+            button_plus.classList.add('hide');
+            button_minus.classList.add('hide');
+            text_bag.classList.add('hide');
+            // text_bag.textContent = +text_bag.textContent-1;
+            text_bag.textContent = 0;
+            item.count = 0;
+            console.log('a');
+        }
     });
 });
 
